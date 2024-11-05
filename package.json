@@ -1,0 +1,14 @@
+{
+  "name": "myproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.js"
+  },
+  "author": "Chen Bei",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
