@@ -1,14 +1,16 @@
+import express from 'express'
 
+const app = express()
+const port = 8080
 
-var http = require('http');
-
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Hello World! This is response from ChenBei\'s computer to you.');
+app.get('/', (req, res) => {
+  res.send('Hello World!');
   hello();
-  
-}).listen(8080);
+})
 
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 
 /**
  * The first nodeJS
